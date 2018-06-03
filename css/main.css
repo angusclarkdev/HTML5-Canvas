@@ -3,4 +3,16 @@ html, body {
   width: 100vw;
   margin: 0; }
 
+body {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center; }
+
+#container {
+  height: 70%;
+  width: 90%;
+  align-self: center;
+  border: 1px solid black; }
+
 /*# sourceMappingURL=main.css.map */
