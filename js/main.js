@@ -1,17 +1,22 @@
-(function(){
-
-  const canvas = document.querySelector('canvas');
-  const container = document.getElementById('container');
-  const ctx = canvas.getContext('2d');
+(function () {
+  const canvas = document.querySelector('canvas')
+  const container = document.getElementById('container')
+  const c = canvas.getContext('2d')
 
   // set canvas size
-canvas.width = container.clientWidth;
-canvas.height = container.clientHeight;
+  canvas.width = container.clientWidth
+  canvas.height = container.clientHeight
 
   // create rectangles
-  ctx.fillStyle = 'green';
-  ctx.fillRect(410,250,200,40);
-  ctx.fillRect(850,100,200,40);
+  c.fillStyle = 'green'
+  c.fillRect(100, 100, 100, 100)
+  c.fillRect(400, 100, 100, 100)
+  c.fillRect(300, 300, 100, 100)
 
-//console.dir(container);
-})();
+  // draw a line
+  c.beginPath()
+  c.moveTo(50, 100)
+  c.lineTo(200, 300)
+  c.stroke()
+
+})()
